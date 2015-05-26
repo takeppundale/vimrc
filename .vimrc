@@ -1,3 +1,4 @@
+"B
 "--------------- NeoBundle ---------------
   set nocompatible              
   filetype off                  
@@ -37,6 +38,13 @@
   NeoBundle 'scrooloose/nerdtree'
   "インデントをわかりやすく表示
   NeoBundle 'Yggdroot/indentLine'
+  "複数カーソル
+  NeoBundle 'terryma/vim-multiple-cursors'
+  "grep
+  NeoBundle 'grep.vim'
+  "friendly-grep
+  NeoBundle 'akira-hamada/friendly-grep.vim'
+
   let g:indentLine_faster = 1
   nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
@@ -46,7 +54,7 @@
   NeoBundleCheck
   call neobundle#end()
 
-  colorscheme darkblue
+  colorscheme darkblue2
 
 "--------------- キーバインド ---------------"
 
