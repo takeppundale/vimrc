@@ -203,11 +203,9 @@
   \ endif
   augroup END
 
-
 "--------------- Python用 ---------------"
   autocmd FileType python setl autoindent
   autocmd FileType python setl smartindent cinwords=if,elif,for,while,try,except,finally,def,class
-
 
 "--------------- lightlineの設定 -----------------"
 
@@ -219,7 +217,6 @@
     \ 'separator': { 'left': '⮀', 'right': '⮂' },
     \ 'subseparator': { 'left': '⮁', 'right': '⮃' },
     \ }
-
 
 "----------------- Dash.app ------------------
 function! s:dash(...)
@@ -239,8 +236,6 @@ endfunction
 command! -nargs=* Dash call <SID>dash(<f-args>)
 
 nnoremap <Leader>d :call <SID>dash(expand('<cword>'))<CR>'
-
-
 
 "------ タブ機能 ----- 
   function! s:SID_PREFIX()
