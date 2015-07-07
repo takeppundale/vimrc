@@ -1,0 +1,3 @@
+・vimでクリップボードを共有する為に以下のパッケージの追加インストールが必要。
+
+$ sudo apt-get -y install vim-gtk vim-athena vim-gnome

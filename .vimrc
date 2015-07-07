@@ -191,6 +191,9 @@
   set list
   set listchars=tab:>-,trail:-,eol:$
 
+  "クリップボードにコピー
+  set clipboard=unnamed,autoselect
+
   "カーソルの下の単語を検索
   vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v, '\/'), "\n", '\\n', 'g')<CR><CR>
 
